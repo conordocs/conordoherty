@@ -28,7 +28,7 @@ const Navbar = () => {
     <div
       className={
         shadow
-          ? "fixed w-full h-20 shadow-xl shadow-gray-700 z-[100] pr-10 pl-10"
+          ? "fixed w-full h-20 shadow-lg shadow-gray-700 z-[100] pr-10 pl-10"
           : "fixed w-full h-20 z-[100] pr-10 pl-10"
       }
     >
@@ -64,7 +64,10 @@ const Navbar = () => {
               </li>
             </Link>
           </ul>
-          <div onClick={handleNav} className="md:hidden">
+          <div
+            onClick={handleNav}
+            className="md:hidden rounded-full bg-gray-700/80 p-3 cursor-pointer hover:scale-110 ease-in duration-250 hover:text-[#12D670]"
+          >
             <AiOutlineMenu size={25} />
           </div>
         </div>
@@ -95,32 +98,40 @@ const Navbar = () => {
               </Link>
               <div
                 onClick={handleNav}
-                className="rounded-full shadow-lg shadow-gray-700 p-3 cursor-pointer hover:scale-110 ease-in duration-250 hover:text-[#12D670]"
+                className="rounded-full bg-gray-700/80 p-3 cursor-pointer hover:scale-110 ease-in duration-250 hover:text-[#12D670]"
               >
                 <AiOutlineClose />
               </div>
             </div>
-            <div className="border-b border-gray-400 my-4">
-              <p className="w-[85%] md:w-[90%] py-4">Check out my portfolio</p>
-            </div>
+            <div className=""></div>
           </div>
 
           <div className="py-4 flex flex-col">
             <ul className="uppercase">
               <Link href="/">
-                <li className="py-4 text-sm">Home</li>
+                <li onClick={() => setNav(false)} className="py-4 text-sm">
+                  Home
+                </li>
               </Link>
               <Link href="/#about">
-                <li className="py-4 text-sm">About</li>
+                <li onClick={() => setNav(false)} className="py-4 text-sm">
+                  About
+                </li>
               </Link>
               <Link href="/#skills">
-                <li className="py-4 text-sm">Skills</li>
+                <li onClick={() => setNav(false)} className="py-4 text-sm">
+                  Skills
+                </li>
               </Link>
               <Link href="/#projects">
-                <li className="py-4 text-sm">Projects</li>
+                <li onClick={() => setNav(false)} className="py-4 text-sm">
+                  Projects
+                </li>
               </Link>
               <Link href="/#contact">
-                <li className="py-4 text-sm">Contact</li>
+                <li onClick={() => setNav(false)} className="py-4 text-sm">
+                  Contact
+                </li>
               </Link>
             </ul>
             <div className="pt-40">
@@ -128,16 +139,16 @@ const Navbar = () => {
                 Check out my links
               </p>
               <div className="flex items-center justify-between my-4 w-full sm:w-[80%]">
-                <div className="rounded-full shadow-lg shadow-gray-700 p-3 cursor-pointer hover:scale-110 ease-in duration-250 hover:text-[#12D670]">
+                <div className="rounded-full bg-gray-700/80 p-3 cursor-pointer hover:scale-110 ease-in duration-250 hover:text-[#12D670]">
                   <FaLinkedin />
                 </div>
-                <div className="rounded-full shadow-lg shadow-gray-700 p-3 cursor-pointer hover:scale-110 ease-in duration-250 hover:text-[#12D670]">
+                <div className="rounded-full bg-gray-700/80 p-3 cursor-pointer hover:scale-110 ease-in duration-250 hover:text-[#12D670]">
                   <FaGithub />
                 </div>
-                <div className="rounded-full shadow-lg shadow-gray-700 p-3 cursor-pointer hover:scale-110 ease-in duration-250 hover:text-[#12D670]">
+                <div className="rounded-full bg-gray-700/80 p-3 cursor-pointer hover:scale-110 ease-in duration-250 hover:text-[#12D670]">
                   <AiOutlineMail />
                 </div>
-                <div className="rounded-full shadow-lg shadow-gray-700 p-3 cursor-pointer hover:scale-110 ease-in duration-250 hover:text-[#12D670]">
+                <div className="rounded-full bg-gray-700/80 p-3 cursor-pointer hover:scale-110 ease-in duration-250 hover:text-[#12D670]">
                   <BsFillPersonLinesFill />
                 </div>
               </div>
@@ -147,7 +158,7 @@ const Navbar = () => {
       </div>
       <div className=" hidden lg:flex fixed flex-col top-[35%] left-0">
         <ul>
-          <li className="w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[0px] duration-200 bg-gray-400/60 p-4">
+          <li className="w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[0px] duration-200 bg-gray-700/80 p-4">
             {/* eslint-disable-next-line */}
             <a
               className="flex justify-between items-center w-full text-gray-300"
@@ -157,7 +168,7 @@ const Navbar = () => {
               LinkedIn <FaLinkedin size={30} />
             </a>
           </li>
-          <li className="w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[0px] duration-200 bg-gray-400/60 p-4">
+          <li className="w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[0px] duration-200 bg-gray-700/80 p-4">
             {/* eslint-disable-next-line */}
             <a
               className="flex justify-between items-center w-full text-gray-300"
@@ -167,7 +178,7 @@ const Navbar = () => {
               GitHub <FaGithub size={30} />
             </a>
           </li>
-          <li className="w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[0px] duration-200 bg-gray-400/60 p-4">
+          <li className="w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[0px] duration-200 bg-gray-700/80 p-4">
             {/* eslint-disable-next-line */}
             <a
               className="flex justify-between items-center w-full text-gray-300"
@@ -177,7 +188,7 @@ const Navbar = () => {
               Email <HiOutlineMail size={30} />
             </a>
           </li>
-          <li className="w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[0px] duration-200 bg-gray-400/60 p-4">
+          <li className="w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[0px] duration-200 bg-gray-700/80 p-4">
             {/* eslint-disable-next-line */}
             <a
               className="flex justify-between items-center w-full text-gray-300"

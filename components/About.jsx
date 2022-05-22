@@ -5,14 +5,14 @@ const About = () => {
   return (
     <div
       id="about"
-      className="w-full md:h-screen p-2 flex items-center py-16 sm:pl-20 sm:pr-20 pr-5 pl-5"
+      className="w-full md:h-full p-2 flex items-center py-16 sm:pl-20 sm:pr-20 pr-5 pl-5"
     >
       <div className="max-w-[1240px] m-auto md:grid grid-cols-3 gap-8 items-center">
         <div className="col-span-2">
           <p className="pb-2 uppercase border-b-4 border-[#12D670] text-xl tracking-widest inline-block">
             About
           </p>
-          <h2 className="py-4">A little bit about me..</h2>
+          <h2 className="py-4">A little bit about me...</h2>
           <p className="py-2 text-gray-300">
             I have just recently finished studying BSc Computing & Information
             Technologies at Queen’s University Belfast. I have achieved a final

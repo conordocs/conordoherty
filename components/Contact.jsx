@@ -6,7 +6,7 @@ const Contact = () => {
   return (
     <div
       id="contact"
-      className="w-full lg:h-screen p-2 sm:pl-20 sm:pr-20 pr-5 pl-5 pb-10"
+      className="w-full lg:h-full p-2 sm:pl-20 sm:pr-20 pr-5 pl-5"
     >
       <div className="max-w-[1240px] m-auto px-2 py-16 w-full">
         <p className="pb-2 uppercase border-b-4 border-[#12D670] text-xl tracking-widest inline-block">
@@ -19,7 +19,7 @@ const Contact = () => {
           </a>
         </h2>
         <div>
-          <div className="p-6 shadow-xl shadow-gray-700 rounded-xl">
+          <div className="p-6 shadow-sm shadow-gray-700 rounded-xl">
             <div className="p-4">
               <form
                 method="POST"
