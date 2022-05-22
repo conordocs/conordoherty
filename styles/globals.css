@@ -29,7 +29,6 @@
   }
 
   button {
-    @apply rounded-sm uppercase bg-gradient-to-r from-[#11d670] to-[#709dff] text-white font-bold;
-    /* text-white group border-2 px-6 py-3 my-2 flex items-center hover:bg-[#11d670] */
+    @apply rounded-md uppercase bg-gradient-to-r from-[#11d670] to-[#709dff] text-white font-bold;
   }
 }

@@ -17,7 +17,7 @@ const Main = () => {
             as a User Support Technician at Queen’s University Belfast. I wish
             to pursue a career in Software Development & Graphic Design.
           </p>
-          <div>
+          <p className="inline-flex align-middle">
             <Link
               activeClass="active"
               href="/#projects"
@@ -31,7 +31,7 @@ const Main = () => {
                 </span>
               </button>
             </Link>
-          </div>
+          </p>
         </div>
       </div>
     </div>
