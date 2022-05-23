@@ -6,9 +6,9 @@ const Contact = () => {
   return (
     <div
       id="contact"
-      className="w-full lg:h-full p-2 sm:pl-20 sm:pr-20 pr-5 pl-5"
+      className="w-full lg:h-full p-2 sm:pl-20 sm:pr-20 pr-5 pl-5 pb-20"
     >
-      <div className="max-w-[1240px] m-auto px-2 py-16 w-full">
+      <div className="max-w-[900px] m-auto items-center justify-center">
         <p className="pb-2 uppercase border-b-4 border-[#12D670] text-xl tracking-widest inline-block">
           Contact
         </p>
@@ -18,13 +18,12 @@ const Contact = () => {
             conordoherty97@hotmail.com
           </a>
         </h2>
-        <div>
-          <div className="p-6 shadow-sm shadow-gray-700 rounded-xl">
+        <div className="items-center justify-center">
+          <div className="w-full max-w-[900px] h-auto shadow-sm shadow-gray-400 rounded-xl lg:p-4">
             <div className="p-4">
               <form
                 method="POST"
                 action="https://getform.io/f/374caf5f-4c32-4090-9210-b6a848fd416a"
-                className="flex flex-col max-w-[600px] w-full"
               >
                 <div className="flex flex-col">
                   <label className="uppercase text-sm py-2">Name</label>
