@@ -5,10 +5,27 @@ import { AiOutlineClose, AiOutlineMenu, AiOutlineMail } from "react-icons/ai";
 import { FaLinkedin, FaGithub } from "react-icons/fa";
 import { BsFillPersonLinesFill } from "react-icons/bs";
 import { HiOutlineMail } from "react-icons/hi";
+import { useRouter } from "next/router";
 
 const Navbar = () => {
   const [shadow, setShadow] = useState(false);
   const [nav, setNav] = useState(false);
+  const [navBg, setNavBg] = useState("#0a1e2f");
+  const router = useRouter();
+
+  useEffect(() => {
+    if (
+      router.asPath === "/nailedit" ||
+      router.asPath === "/couchpotato" ||
+      router.asPath === "/realtor" ||
+      router.asPath === "/netflix"
+    ) {
+      setNavBg("transparent");
+    } else {
+      setNavBg("#0a1e2f");
+    }
+  }, [router]);
+
   const handleNav = () => {
     setNav(!nav);
   };
@@ -26,6 +43,7 @@ const Navbar = () => {
 
   return (
     <div
+      style={{ backgroundColor: `${navBg}` }}
       className={
         shadow
           ? "fixed w-full h-20 shadow-lg shadow-gray-700 z-[100] pr-10 pl-10"
@@ -45,21 +63,27 @@ const Navbar = () => {
         <div>
           <ul className="hidden md:flex">
             <Link href="/">
-              <li className="ml-10 text-sm uppercase hover:border-b">Home</li>
+              <li className="ml-10 text-sm uppercase hover:border-b border-[#12D670]">
+                Home
+              </li>
             </Link>
             <Link href="/#about">
-              <li className="ml-10 text-sm uppercase hover:border-b">About</li>
+              <li className="ml-10 text-sm uppercase hover:border-b border-[#12D670]">
+                About
+              </li>
             </Link>
             <Link href="/#skills">
-              <li className="ml-10 text-sm uppercase hover:border-b">Skills</li>
+              <li className="ml-10 text-sm uppercase hover:border-b border-[#12D670]">
+                Skills
+              </li>
             </Link>
             <Link href="/#projects">
-              <li className="ml-10 text-sm uppercase hover:border-b">
+              <li className="ml-10 text-sm uppercase hover:border-b border-[#12D670]">
                 Projects
               </li>
             </Link>
             <Link href="/#contact">
-              <li className="ml-10 text-sm uppercase hover:border-b">
+              <li className="ml-10 text-sm uppercase hover:border-b border-[#12D670]">
                 Contact
               </li>
             </Link>
@@ -161,7 +185,7 @@ const Navbar = () => {
           <li className="w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[0px] duration-200 bg-gray-700/80 p-4">
             {/* eslint-disable-next-line */}
             <a
-              className="flex justify-between items-center w-full text-gray-300"
+              className="flex justify-between items-center w-full text-gray-300 hover:text-[#12D670]"
               href="https://www.linkedin.com/in/conor-doherty-101/"
               target="_blank"
             >
@@ -171,7 +195,7 @@ const Navbar = () => {
           <li className="w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[0px] duration-200 bg-gray-700/80 p-4">
             {/* eslint-disable-next-line */}
             <a
-              className="flex justify-between items-center w-full text-gray-300"
+              className="flex justify-between items-center w-full text-gray-300 hover:text-[#12D670]"
               href="https://github.com/conordocs?tab=repositories"
               target="_blank"
             >
@@ -181,7 +205,7 @@ const Navbar = () => {
           <li className="w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[0px] duration-200 bg-gray-700/80 p-4">
             {/* eslint-disable-next-line */}
             <a
-              className="flex justify-between items-center w-full text-gray-300"
+              className="flex justify-between items-center w-full text-gray-300 hover:text-[#12D670]"
               href="mailto:conordoherty97@hotmail.com"
               target="_blank"
             >
@@ -191,7 +215,7 @@ const Navbar = () => {
           <li className="w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[0px] duration-200 bg-gray-700/80 p-4">
             {/* eslint-disable-next-line */}
             <a
-              className="flex justify-between items-center w-full text-gray-300"
+              className="flex justify-between items-center w-full text-gray-300 hover:text-[#12D670]"
               href="/../public/assets/Conor Doherty - CV.pdf"
               target="_blank"
             >
