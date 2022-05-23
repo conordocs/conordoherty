@@ -216,7 +216,8 @@ const Navbar = () => {
             {/* eslint-disable-next-line */}
             <a
               className="flex justify-between items-center w-full text-gray-300 hover:text-[#12D670]"
-              href="/../public/assets/Conor Doherty - CV.pdf"
+              href="../public/assets/Conor Doherty - CV.pdf"
+              download
               target="_blank"
             >
               Resume <BsFillPersonLinesFill size={30} />
