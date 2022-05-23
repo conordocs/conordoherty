@@ -1,8 +1,6 @@
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
-import Head from "next/head";
-
 // Carousel
 import { Zoom } from "react-slideshow-image";
 import "react-slideshow-image/dist/styles.css";
@@ -37,7 +35,7 @@ const images = [
 const nailedit = () => {
   return (
     <div className="w-full">
-      <div className="w-screen h-[30vh] lg:h-[40vh] relative">
+      <div className="w-full h-[30vh] lg:h-[40vh] relative">
         <div className="absolute top-0 left-0 w-full h-[30vh] lg:h-[40vh] bg-black/80 z-10" />
         <Image
           className="absolute z-1"
@@ -63,43 +61,47 @@ const nailedit = () => {
             tradespeople to continue working during the COVID-19 lockdowns.
           </p>
           <ul className="list-disc pl-10 py-5">
-            <li className="pb-1">
+            <li className="pb-1 cursor-auto">
               This website tracks stock levels of products withiin 3 different
               shops.
             </li>
-            <li className="pb-1">
+            <li className="pb-1 cursor-auto">
               Users will be able to view products, view which shop each product
               is available, book appointments with trade professionals, order
               products from whichever shop suits them & upload contact details
               if they are looking for work in the form of a 'virtual business
               card'
             </li>
-            <li className="pb-1">
+            <li className="pb-1 cursor-auto">
               Logged in users will receive 10% discount on products. They will
               also be able to view their orders and bookings.
             </li>
           </ul>
           <div className="py-5">
-            <button className="px-8 py-2 mt-4">Code</button>
+            <button className="px-8 py-2 mt-4">
+              <a href="https://github.com/conordocs/nailedit" target="_blank">
+                Code
+              </a>
+            </button>
           </div>
         </div>
         <div className="h-fit col-span-4 md:col-span-1 shadow-md shadow-gray-700 rounded-xl p-4">
           <div className="p-2">
             <p className="text-center font-bold pb-2">Technologies</p>
             <div className="grid grid-cols-3 md:grid-cols-1">
-              <p className="text-gray-600 py-2 flex items-center">
+              <p className="text-gray-400 py-2 flex items-center">
                 <RiRadioButtonFill className="pr-1" /> HTML
               </p>
-              <p className="text-gray-600 py-2 flex items-center">
+              <p className="text-gray-400 py-2 flex items-center">
                 <RiRadioButtonFill className="pr-1" /> PHP
               </p>
-              <p className="text-gray-600 py-2 flex items-center">
+              <p className="text-gray-400 py-2 flex items-center">
                 <RiRadioButtonFill className="pr-1" /> Javascript
               </p>
-              <p className="text-gray-600 py-2 flex items-center">
+              <p className="text-gray-400 py-2 flex items-center">
                 <RiRadioButtonFill className="pr-1" /> CSS
               </p>
-              <p className="text-gray-600 py-2 flex items-center">
+              <p className="text-gray-400 py-2 flex items-center">
                 <RiRadioButtonFill className="pr-1" /> Bootstrap
               </p>
             </div>
