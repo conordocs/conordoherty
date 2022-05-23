@@ -20,7 +20,7 @@ const Navbar = () => {
       router.asPath === "/realtor" ||
       router.asPath === "/netflix"
     ) {
-      setNavBg("transparent");
+      setNavBg("#0a1e2f");
     } else {
       setNavBg("#0a1e2f");
     }

@@ -8,36 +8,40 @@ import "react-slideshow-image/dist/styles.css";
 import { RiRadioButtonFill } from "react-icons/ri";
 import { AiOutlineArrowLeft } from "react-icons/ai";
 // Images
-import NailedItImg from "../public/assets/naileditImg/products-1.png";
-import Appointment from "../public/assets/naileditImg/appointment-1.png";
-import FAQ from "../public/assets/naileditImg/faq-1.png";
-import Jobs from "../public/assets/naileditImg/jobs-1.png";
-import Login from "../public/assets/naileditImg/login-1.png";
-import Orders from "../public/assets/naileditImg/orders-1.png";
-import Reviews from "../public/assets/naileditImg/reviews-1-1.png";
-import Reviews2 from "../public/assets/naileditImg/reviews-2.png";
-import Shops from "../public/assets/naileditImg/shops-1.png";
-import Tool from "../public/assets/naileditImg/tool-1.png";
+import AddShow from "../public/assets/couchPotatoImg/add-show.png";
+import AdminHome from "../public/assets/couchPotatoImg/admin-home.png";
+import AdminLogin from "../public/assets/couchPotatoImg/admin-login.png";
+import EditDelete from "../public/assets/couchPotatoImg/edit-delete-show.png";
+import Home from "../public/assets/couchPotatoImg/homepage.png";
+import NetflixAwards from "../public/assets/couchPotatoImg/netflix-awards.png";
+import PrimeAwards from "../public/assets/couchPotatoImg/prime-awards.png";
+import Reviews from "../public/assets/couchPotatoImg/reviews.png";
+import ShowDetails from "../public/assets/couchPotatoImg/show-details.png";
+import ShowSearch from "../public/assets/couchPotatoImg/show-search.png";
+import UserLogin from "../public/assets/couchPotatoImg/user-login.png";
+import Watchlist from "../public/assets/couchPotatoImg/watchlist.png";
 
 const images = [
-  Appointment,
-  FAQ,
-  Jobs,
-  Login,
-  Orders,
-  NailedItImg,
+  AddShow,
+  AdminHome,
+  AdminLogin,
+  EditDelete,
+  Home,
+  NetflixAwards,
+  PrimeAwards,
   Reviews,
-  Reviews2,
-  Shops,
-  Tool,
+  ShowDetails,
+  ShowSearch,
+  UserLogin,
+  Watchlist,
 ];
 
-const nailedit = () => {
+const couchpotato = () => {
   return (
     <div className="w-full">
       <div className="w-full h-[20vh] lg:h-[30vh] relative">
         <div className="absolute top-[70%] max-w-[1240px] w-full left-[50%] right-[50%] translate-x-[-50%] translate-y-[-50%] text-white z-10 p-2 lg:h-fit sm:pl-14 sm:pr-20 pr-5">
-          <h2 className="py-2 pl-5">NailedIT</h2>
+          <h2 className="py-2 pl-5">Couch Potato</h2>
           <h3 className="pl-5">PHP / HTML / JavaScript / CSS</h3>
         </div>
       </div>
@@ -47,31 +51,34 @@ const nailedit = () => {
           {/* <p>Project</p> */}
           <h2 className="py-2">Overview</h2>
           <p>
-            NailedIT is my final year project which was focused on the title of
-            “How might we use software to promote Remote-Shopping”. This was an
-            individual project as part of my dissertation focussing on assisting
-            tradespeople to continue working during the COVID-19 lockdowns.
+            Couch Potato is a project which I have worked on in my own time. It
+            is created on the same idea of IMDb or Rotten Tomatoes.
           </p>
           <ul className="list-disc pl-10 py-5">
             <li className="pb-1 cursor-auto">
-              This website tracks stock levels of products withiin 3 different
-              shops.
+              A website where a user can log in and view TV Shows ratings, where
+              to stream, user reviews - (similar to IMDb)
             </li>
             <li className="pb-1 cursor-auto">
-              Users will be able to view products, view which shop each product
-              is available, book appointments with trade professionals, order
-              products from whichever shop suits them & upload contact details
-              if they are looking for work in the form of a 'virtual business
-              card'
+              Users of this website will be able to search for tv show, read
+              star ratings, view awards, view overall imdb/rotten tomatoes
+              score, which streaming services they can stream the show on.
             </li>
             <li className="pb-1 cursor-auto">
-              Logged in users will receive 10% discount on products. They will
-              also be able to view their orders and bookings.
+              Logged in users will have the ability to write star ratings &
+              add/delete shows to their watchlist.
+            </li>
+            <li className="pb-1 cursor-auto">
+              Admin side will have the ability to add, edit and delete different
+              shows from the database.
             </li>
           </ul>
           <div className="py-5">
             <button className="px-8 py-2 mt-4">
-              <a href="https://github.com/conordocs/nailedit" target="_blank">
+              <a
+                href="https://github.com/conordocs/couchpotato"
+                target="_blank"
+              >
                 Code
               </a>
             </button>
@@ -121,4 +128,4 @@ const nailedit = () => {
   );
 };
 
-export default nailedit;
+export default couchpotato;

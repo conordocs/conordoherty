@@ -8,37 +8,33 @@ import "react-slideshow-image/dist/styles.css";
 import { RiRadioButtonFill } from "react-icons/ri";
 import { AiOutlineArrowLeft } from "react-icons/ai";
 // Images
-import NailedItImg from "../public/assets/naileditImg/products-1.png";
-import Appointment from "../public/assets/naileditImg/appointment-1.png";
-import FAQ from "../public/assets/naileditImg/faq-1.png";
-import Jobs from "../public/assets/naileditImg/jobs-1.png";
-import Login from "../public/assets/naileditImg/login-1.png";
-import Orders from "../public/assets/naileditImg/orders-1.png";
-import Reviews from "../public/assets/naileditImg/reviews-1-1.png";
-import Reviews2 from "../public/assets/naileditImg/reviews-2.png";
-import Shops from "../public/assets/naileditImg/shops-1.png";
-import Tool from "../public/assets/naileditImg/tool-1.png";
+import Homepage from "../public/assets/netflixImg/1.PNG";
+import Carousel from "../public/assets/netflixImg/2.PNG";
+import AddFav from "../public/assets/netflixImg/3.PNG";
+import Alert from "../public/assets/netflixImg/4.PNG";
+import Categories from "../public/assets/netflixImg/5.PNG";
+import SignUp from "../public/assets/netflixImg/6.PNG";
+import SignIn from "../public/assets/netflixImg/7.PNG";
+import Account from "../public/assets/netflixImg/8.PNG";
 
 const images = [
-  Appointment,
-  FAQ,
-  Jobs,
-  Login,
-  Orders,
-  NailedItImg,
-  Reviews,
-  Reviews2,
-  Shops,
-  Tool,
+  Homepage,
+  Carousel,
+  AddFav,
+  Alert,
+  Categories,
+  SignUp,
+  SignIn,
+  Account,
 ];
 
-const nailedit = () => {
+const netflix = () => {
   return (
     <div className="w-full">
       <div className="w-full h-[20vh] lg:h-[30vh] relative">
         <div className="absolute top-[70%] max-w-[1240px] w-full left-[50%] right-[50%] translate-x-[-50%] translate-y-[-50%] text-white z-10 p-2 lg:h-fit sm:pl-14 sm:pr-20 pr-5">
-          <h2 className="py-2 pl-5">NailedIT</h2>
-          <h3 className="pl-5">PHP / HTML / JavaScript / CSS</h3>
+          <h2 className="py-2 pl-5">Netflix</h2>
+          <h3 className="pl-5">React JS / API / FireBase / Tailwinds</h3>
         </div>
       </div>
 
@@ -47,31 +43,32 @@ const nailedit = () => {
           {/* <p>Project</p> */}
           <h2 className="py-2">Overview</h2>
           <p>
-            NailedIT is my final year project which was focused on the title of
-            “How might we use software to promote Remote-Shopping”. This was an
-            individual project as part of my dissertation focussing on assisting
-            tradespeople to continue working during the COVID-19 lockdowns.
+            This project is a duplicate of Netflix, which was created with React
+            JS, Firebase & Tailwinds CSS.
           </p>
           <ul className="list-disc pl-10 py-5">
             <li className="pb-1 cursor-auto">
-              This website tracks stock levels of products withiin 3 different
-              shops.
+              Users can view TV Shows & Movies which are available to stream on
+              Netflix.
             </li>
             <li className="pb-1 cursor-auto">
-              Users will be able to view products, view which shop each product
-              is available, book appointments with trade professionals, order
-              products from whichever shop suits them & upload contact details
-              if they are looking for work in the form of a 'virtual business
-              card'
+              Users can create an account and sign into their account.
             </li>
             <li className="pb-1 cursor-auto">
-              Logged in users will receive 10% discount on products. They will
-              also be able to view their orders and bookings.
+              Logged in users will have the ability to add TV Shows & Movies to
+              their 'My Shows' category.
+            </li>
+            <li className="pb-1 cursor-auto">
+              Logged in users will also have the ability to remove these TV
+              Shows & Movies from their 'My Shows' category.
             </li>
           </ul>
           <div className="py-5">
             <button className="px-8 py-2 mt-4">
-              <a href="https://github.com/conordocs/nailedit" target="_blank">
+              <a
+                href="https://github.com/conordocs/react_netflix"
+                target="_blank"
+              >
                 Code
               </a>
             </button>
@@ -82,19 +79,16 @@ const nailedit = () => {
             <p className="text-center font-bold pb-2">Technologies</p>
             <div className="grid grid-cols-3 md:grid-cols-1">
               <p className="text-gray-400 py-2 flex items-center">
-                <RiRadioButtonFill className="pr-1" /> HTML
+                <RiRadioButtonFill className="pr-1" /> React JS
               </p>
               <p className="text-gray-400 py-2 flex items-center">
-                <RiRadioButtonFill className="pr-1" /> PHP
+                <RiRadioButtonFill className="pr-1" /> API
               </p>
               <p className="text-gray-400 py-2 flex items-center">
-                <RiRadioButtonFill className="pr-1" /> Javascript
+                <RiRadioButtonFill className="pr-1" /> Tailwinds CSS
               </p>
               <p className="text-gray-400 py-2 flex items-center">
-                <RiRadioButtonFill className="pr-1" /> CSS
-              </p>
-              <p className="text-gray-400 py-2 flex items-center">
-                <RiRadioButtonFill className="pr-1" /> Bootstrap
+                <RiRadioButtonFill className="pr-1" /> FireBase
               </p>
             </div>
           </div>
@@ -121,4 +115,4 @@ const nailedit = () => {
   );
 };
 
-export default nailedit;
+export default netflix;
