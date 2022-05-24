@@ -173,7 +173,12 @@ const Navbar = () => {
                 <div className="rounded-full bg-gray-700/80 p-3 cursor-pointer hover:scale-110 ease-in duration-250 hover:text-[#12D670]">
                   <AiOutlineMail />
                 </div>
-                <div className="rounded-full bg-gray-700/80 p-3 cursor-pointer hover:scale-110 ease-in duration-250 hover:text-[#12D670]">
+                <div
+                  className="rounded-full bg-gray-700/80 p-3 cursor-pointer hover:scale-110 ease-in duration-250 hover:text-[#12D670]"
+                  href="/files/Conor Doherty - CV - May.pdf"
+                  download
+                  target="_blank"
+                >
                   <BsFillPersonLinesFill />
                 </div>
               </div>
