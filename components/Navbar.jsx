@@ -6,6 +6,7 @@ import { FaLinkedin, FaGithub } from "react-icons/fa";
 import { BsFillPersonLinesFill } from "react-icons/bs";
 import { HiOutlineMail } from "react-icons/hi";
 import { useRouter } from "next/router";
+// import CV from "/files/Conor Doherty - CV - May.pdf";
 
 const Navbar = () => {
   const [shadow, setShadow] = useState(false);
@@ -216,7 +217,7 @@ const Navbar = () => {
             {/* eslint-disable-next-line */}
             <a
               className="flex justify-between items-center w-full text-gray-300 hover:text-[#12D670]"
-              href="../public/assets/Conor Doherty - CV.pdf"
+              href="/files/Conor Doherty - CV - May.pdf"
               download
               target="_blank"
             >
