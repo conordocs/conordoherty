@@ -65,7 +65,7 @@ const couchpotato = () => {
               score, which streaming services they can stream the show on.
             </li>
             <li className="pb-1 cursor-auto">
-              Logged in users will have the ability to write star ratings &
+              Logged in users will have the ability to write star ratings and
               add/delete shows to their watchlist.
             </li>
             <li className="pb-1 cursor-auto">
@@ -78,6 +78,7 @@ const couchpotato = () => {
               <a
                 href="https://github.com/conordocs/couchpotato"
                 target="_blank"
+                rel="noreferrer"
               >
                 Code
               </a>

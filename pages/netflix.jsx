@@ -44,23 +44,23 @@ const netflix = () => {
           <h2 className="py-2">Overview</h2>
           <p>
             This project is a duplicate of Netflix, which was created with React
-            JS, Firebase & Tailwinds CSS.
+            JS, Firebase and Tailwinds CSS.
           </p>
           <ul className="list-disc pl-10 py-5">
             <li className="pb-1 cursor-auto">
-              Users can view TV Shows & Movies which are available to stream on
-              Netflix.
+              Users can view TV Shows and Movies which are available to stream
+              on Netflix.
             </li>
             <li className="pb-1 cursor-auto">
               Users can create an account and sign into their account.
             </li>
             <li className="pb-1 cursor-auto">
-              Logged in users will have the ability to add TV Shows & Movies to
-              their 'My Shows' category.
+              Logged in users will have the ability to add TV Shows and Movies
+              to their 'My Shows' category.
             </li>
             <li className="pb-1 cursor-auto">
               Logged in users will also have the ability to remove these TV
-              Shows & Movies from their 'My Shows' category.
+              Shows and Movies from their 'My Shows' category.
             </li>
           </ul>
           <div className="py-5">
@@ -68,6 +68,7 @@ const netflix = () => {
               <a
                 href="https://github.com/conordocs/react_netflix"
                 target="_blank"
+                rel="noreferrer"
               >
                 Code
               </a>

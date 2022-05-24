@@ -59,6 +59,7 @@ const realtor = () => {
               <a
                 href="https://github.com/conordocs/react_realestate"
                 target="_blank"
+                rel="noreferrer"
               >
                 Code
               </a>

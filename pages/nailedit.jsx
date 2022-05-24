@@ -60,7 +60,7 @@ const nailedit = () => {
             <li className="pb-1 cursor-auto">
               Users will be able to view products, view which shop each product
               is available, book appointments with trade professionals, order
-              products from whichever shop suits them & upload contact details
+              products from whichever shop suits them and upload contact details
               if they are looking for work in the form of a 'virtual business
               card'
             </li>
@@ -71,7 +71,11 @@ const nailedit = () => {
           </ul>
           <div className="py-5">
             <button className="px-8 py-2 mt-4">
-              <a href="https://github.com/conordocs/nailedit" target="_blank">
+              <a
+                href="https://github.com/conordocs/nailedit"
+                target="_blank"
+                rel="noreferrer"
+              >
                 Code
               </a>
             </button>
