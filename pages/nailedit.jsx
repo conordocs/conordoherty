@@ -61,8 +61,8 @@ const nailedit = () => {
               Users will be able to view products, view which shop each product
               is available, book appointments with trade professionals, order
               products from whichever shop suits them and upload contact details
-              if they are looking for work in the form of a 'virtual business
-              card'
+              if they are looking for work in the form of a `virtual business
+              card`
             </li>
             <li className="pb-1 cursor-auto">
               Logged in users will receive 10% discount on products. They will

@@ -56,11 +56,11 @@ const netflix = () => {
             </li>
             <li className="pb-1 cursor-auto">
               Logged in users will have the ability to add TV Shows and Movies
-              to their 'My Shows' category.
+              to their `My Shows` category.
             </li>
             <li className="pb-1 cursor-auto">
               Logged in users will also have the ability to remove these TV
-              Shows and Movies from their 'My Shows' category.
+              Shows and Movies from their `My Shows` category.
             </li>
           </ul>
           <div className="py-5">
